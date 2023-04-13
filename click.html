@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click</title>
+    <style>
+        button {
+            height: 50px;
+            width: 100px;
+            font-size: 20px;
+            background-color: coral;
+            border: 2px solid red;
+        }
+
+        .a {
+            width: 50%;
+            margin: 0px;
+            padding: 10px;
+            background-color: lightblue;
+
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="t"></h1>
+    <button onclick="xyz()">Click</button><br><br>
+
+    <p id="para" onmouseover="xyz()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro blanditiis dolore fugit doloribus accusamus ratione dolorem, 
+        repellendus ipsa ut exercitationem sapiente a, placeat inventore, hic totam cupiditate. Ad, fuga saepe?
+    </p>
+
+    <script>
+
+        h1=document.getElementById('t');
+
+        function xyz() 
+        {
+            h1.innerText ='Krishna zaveri';
+        }
+
+        h2=document.getElementById('para');
+
+        h2.classList.add('a')
+        
+        
+    </script>
+</body>
+</html>
